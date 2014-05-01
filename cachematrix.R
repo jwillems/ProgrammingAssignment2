@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function checks if the matrix is changed - if not it will get the latest matrix else it will set a new matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -19,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function computes the inverse of a matrix using makeCacheMatrix.
+## If the matrix was changed is stores the new matrix using the above function and computes a new inverse.
+## Else it will obtain the previous result.
 
 cacheSolve <- function(x, ...) {
 	## Return a matrix that is the inverse of 'x'
